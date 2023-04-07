@@ -1,3 +1,5 @@
+Started from : https://devblogs.microsoft.com/dotnet/codespaces-template-blazor-portfolio-website/
+
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=TO_BE_UPDATED)
 
 # .NET (Blazor) Portfolio Site with GitHub Codespaces
