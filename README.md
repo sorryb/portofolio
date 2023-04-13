@@ -381,6 +381,10 @@ In your Codespaces, your portfolio application should be running and will reload
 
 <br/>
 
-## 🔎 Found an issue or have an idea for improvement?
+## 🔎 Run in Visual Studio Code
 
-Help us make this template repository better by [letting us know and opening an issue!](/../../issues/new).
+git clone
+dotnet restore
+dotnet build
+cd D:\Work\Exercices\Blazor\portofolio\src\BlazorApp
+dotnet watch run
