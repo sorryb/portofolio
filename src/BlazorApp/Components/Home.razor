@@ -1,3 +1,5 @@
+@inject NavigationManager _nav
+
 <section class="dark" id="home">
     @if (hero is not null)
     {
@@ -14,8 +16,10 @@
         <h2>@property.Title</h2>
     }
     </div>
-    <div style="position: absolute; bottom: 8rem; left: 50%;">
-        <img src="images/down-arrow.svg" style="height: 3rem; width: 3rem;" alt="scroll down" />
+    <div style="position: absolute; bottom: 5rem; left: 50%;">
+         <a href="#about" target="_top">
+            <img src="images/down-arrow.svg" style="height: 3rem; width: 3rem;" alt="scroll down"  @onclick="( () => Navigate())" />
+        </a>
     </div>
 </section>
 
@@ -33,5 +37,10 @@
     {
         property = await Http.GetFromJsonAsync<SiteProperties>("sample-data/siteproperties.json");
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "home");
+    }
+
+    protected void Navigate()
+    {
+        _nav.NavigateTo("#contact");
     }
 }
